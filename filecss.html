@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://e7.pngegg.com/pngimages/698/340/png-clipart-circle-desktop-computer-circle-computer-logo.png">
+    <title>CSS INTRODUCTION</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+  
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%,rgba(0,0,0,0.5)50%), url(https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1409.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1713571200&semt=ais);
+    background-position: center;
+    background-size: cover;
+    height: 180vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #0000ff;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #00ffff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ffffff;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #00ffff;
+    margin-top: 13px;
+    color: #ffffff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ffffff;
+    border: 2px solid #00ffff;
+    margin-top: 13px;
+    color: #000000;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #00ffff;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #ffffff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 40px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #00ffff;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #0000ff;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #0000ff;
+    font-size: 65px
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #00ffff;
+    font-size: 22px;
+    background-color: #ffffff00;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ffffff;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #ffffff;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ffffff;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #ffffff;
+}
+
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">CSS Introduction</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="file:///C:/Users/LIM/Desktop/New%20folder/file1.html">HOME</a></li>
+                    <li><a href="file:///C:/Users/LIM/Desktop/New%20folder/filehtml.html">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    
+                    
+                </ul>
+            </div>
+        </div> 
+        <div class="content">
+            <h1>CSS Introduction</h1>
+            <p class="par">CSS, short for Cascading Style Sheets, is a style sheet language used to describe the presentation of a document written in markup languages such as HTML and XML. It provides a way to control the layout, design, and appearance of web pages, allowing developers to separate the content of a website from its visual presentation..</p>
+            <p class="par">In simpler terms, CSS determines how HTML elements are displayed on a web page. It defines the colors, fonts, spacing, borders, and positioning of elements, giving web pages their visual style and layout. For example, CSS can specify that headings should be displayed in a certain font size and color, paragraphs should have a specific line height and margin, and links should change color when hovered over.<p>
+             
+            <p class="par">1.CSS, or Cascading Style Sheets, is a stylesheet language used to describe the presentation of a document written in HTML or XML. It provides a way to control the layout, design, and appearance of web pages, allowing developers to separate the content of a website from its visual presentation.</p>
+            <p class="par">2.Developed in the late 1990s, CSS was introduced as a way to address the limitations of HTML in terms of styling and layout. By defining styles for various HTML elements, CSS enables developers to create visually appealing and consistent web pages across different devices and screen sizes.</p>
+            <p class="par">3.CSS works by selecting HTML elements and applying styling rules to them. These rules can specify properties such as colors, fonts, margins, padding, borders, and positioning, among others. Styles can be applied directly to HTML elements, or grouped into classes and IDs for more targeted styling.</p>
+            <p class="par">4.One of the key features of CSS is its ability to cascade styles, meaning that multiple style rules can be applied to the same element, with the final result being determined by the specificity and order of the rules. This allows developers to create complex and flexible style sheets that adapt to different contexts.</p>
+            <p class="par">5.CSS allows for both inline styling (where styles are applied directly to HTML elements using the style attribute) and external styling (where styles are defined in separate CSS files and linked to HTML documents using the /link/ element). External stylesheets offer greater flexibility and maintainability, especially for larger projects.</p>
+            <p class="par">6.CSS selectors are used to target specific elements in an HTML document and apply styles to them. Selectors can target elements based on their type, class, ID, attributes, or relationship to other elements. This gives developers precise control over which elements receive which styles.</p>
+            <p class="par">7.With CSS, developers can create responsive designs that adapt to different screen sizes and devices. This is achieved through techniques such as media queries, which allow styles to be applied conditionally based on factors like screen width, resolution, and orientation.</p>
+            <p class="par">8.CSS preprocessors such as Sass and Less extend the capabilities of CSS by introducing features like variables, mixins, nesting, and inheritance. These tools make it easier to write and manage complex stylesheets, improve code reusability, and streamline the development process.</p>
+            <p class="par">9.CSS frameworks like Bootstrap, Foundation, and Bulma provide pre-designed CSS styles and components that developers can use to build websites quickly and efficiently. </p>
+            <button class="btnn"><a href="file:///C:/Users/LIM/Desktop/New%20folder/file1.html">Back to Home</a></button>
+        </div>
+    </div>
+</body>
+</html>
